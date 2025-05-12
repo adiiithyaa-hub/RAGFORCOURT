@@ -1,0 +1,31 @@
+Prerequisites
+
+Python 3.8+
+Tesseract OCR for image text extraction
+
+Setup
+
+Clone the repository:
+bashgit clone https://github.com/yourusername/doc-qa.git
+cd doc-qa
+
+Create a virtual environment:
+bashpython -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+Install dependencies:
+bashpip install -r requirements.txt
+
+Create a .env file with your Anthropic API key:
+ANTHROPIC_API_KEY=your_api_key_here
+
+
+Usage
+
+Run the Streamlit app:
+bashstreamlit run app.py
+
+Open your browser and navigate to http://localhost:8501
+Enter your Anthropic API key in the sidebar
+Upload a PDF or image document
+Ask questions about the document
