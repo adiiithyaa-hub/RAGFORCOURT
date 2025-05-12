@@ -349,6 +349,12 @@ def reset_session():
     st.experimental_rerun()
 
 def main():
+    # Initialize session state keys to prevent key errors
+    if 'last_result' not in st.session_state:
+        st.session_state['last_result'] = None
+    if 'last_query' not in st.session_state:
+        st.session_state['last_query'] = None
+    
     st.set_page_config(
         page_title="Advanced Document Q&A with Claude",
         page_icon="📄",
@@ -512,7 +518,10 @@ def main():
             
             # Display results
             st.subheader("📘 Answer:")
-            st.markdown(result["result"])
+            if result is not None and "result" in result:
+                st.markdown(result["result"])
+            else:
+                st.error("No result available. Please try asking a question after uploading and processing a document.")
             
             # Show source chunks in expander
             if "source_documents" in result:
