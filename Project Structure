@@ -1,0 +1,18 @@
+doc-qa/
+├── app.py                    # Main Streamlit application
+├── config.py                 # Configuration parameters
+├── src/
+│   ├── __init__.py           
+│   ├── document_processor.py # Document text extraction
+│   ├── text_chunker.py       # Text chunking functionality
+│   ├── vector_store.py       # FAISS vector database handling
+│   ├── llm_interface.py      # Claude LLM integration
+│   └── utils.py              # Helper functions and utilities
+├── cache/                    # Cache directory (gitignored)
+├── docs/                     # Documentation
+│   └── images/               # Screenshots and images
+├── tests/                    # Test files
+├── .env.example              # Example environment file
+├── .gitignore                # Git ignore file
+├── requirements.txt          # Python dependencies
+└── README.md                 # Project documentation
