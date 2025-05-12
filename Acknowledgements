@@ -1,0 +1,8 @@
+
+
+Streamlit for the web application framework
+LangChain for LLM integration
+PyMuPDF for PDF processing
+Tesseract OCR for image text extraction
+FAISS for vector similarity search
+Anthropic for the Claude LLM
