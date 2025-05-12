@@ -1,0 +1,8 @@
+ Advanced Text Extraction: Uses both direct extraction and OCR for PDFs
+Intelligent Chunking: Splits documents into semantic chunks for better retrieval
+Vector Search: Uses FAISS to find the most relevant document chunks
+ LLM Integration: Leverages Claude LLM to generate accurate answers
+ Caching: Optimizes performance with intelligent caching
+ Progress Tracking: Shows real-time progress during document processing
+ Error Handling: Robust error handling and user feedback
+
